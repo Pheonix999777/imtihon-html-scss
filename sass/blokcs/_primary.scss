@@ -1,0 +1,238 @@
+.primary{
+    padding-bottom: 150px;
+}
+
+.primary__ul{
+    @include style;
+}
+
+.primary__li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1015px;
+   
+}
+
+.primary__li:not(:last-child){
+    margin-bottom: 80px;
+}
+
+.primary__li:nth-child(even){
+    flex-direction: row-reverse;
+    .primary__wrapper{
+        max-width: 350px;
+        margin-right: 50px;
+    }
+
+  
+}
+
+.primary__pht{
+    max-width: 540px;
+}
+
+.primary__wrapper{
+    max-width: 350px;
+    margin-left: 50px;
+}
+
+.primary__wrapper::before{
+    content: "";
+    display: block;
+    height: 1px;
+    opacity: 0.15;
+    background: $main-color;
+    margin-bottom: 103px;
+}
+
+.primary__wrapper::after{
+    content: "";
+    display: block;
+    height: 1px;
+    opacity: 0.15;
+    background: $main-color;
+    margin-top: 115px;
+}
+
+.primary__title{
+    color: $main-color;
+    font-family: 'Ibarra Real Nova';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px; 
+    letter-spacing: -0.357px;
+    margin: 0;
+}
+
+.primary__text{
+    color: $main-color;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px; 
+    margin: 0;
+    margin-top: 28px;
+}
+
+.primary__div{
+    margin-top: 40px;
+  
+}
+
+.primary__link{
+    color: $main-color;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 17px 35px 17px 32px;
+    text-transform: uppercase;
+    border: 1px solid #33323D;
+    text-decoration: none;
+    transition: background-color 0.6s, color 0.6s;
+}
+
+.primary__link:hover{
+    color: $color;
+    background: $main-color;
+}
+
+@media  only screen  and (max-width: 768px){
+    .primary{
+        padding-bottom: 96px;
+    }
+
+    .primary__pht{
+        max-width: 540px;
+    }
+    
+    .primary__wrapper{
+        max-width: 350px;
+        margin-left: 50px;
+    }
+    
+    .primary__wrapper::before{
+        content: "";
+        display: block;
+        height: 1px;
+        opacity: 0.15;
+        background: $main-color;
+        margin-bottom: 32px;
+    }
+    
+    .primary__wrapper::after{
+        content: "";
+        display: block;
+        height: 1px;
+        opacity: 0.15;
+        background: $main-color;
+        margin-top: 70px;
+    }
+    
+    .primary__title{
+        color: $main-color;
+        font-family: 'Ibarra Real Nova';
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 42px; 
+        letter-spacing: -0.357px;
+        margin: 0;
+    }
+    
+    .primary__text{
+        color: $main-color;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px; 
+        margin: 0;
+        margin-top: 28px;
+    }
+    
+    .primary__div{
+        margin-top: 35px;
+      
+    }
+
+
+}
+
+
+@media  only screen  and (max-width: 632px){
+    .primary{
+        padding-bottom: 80px;
+    }
+
+    .primary__pht{
+        max-width: 540px;
+    }
+
+    .primary__li{
+        flex-direction: column;
+        max-width: 1015px;
+       
+    }
+    
+    .primary__li:not(:last-child){
+        margin-bottom: 72px;
+    }
+    
+    .primary__wrapper{
+        max-width: 350px;
+        margin-left: 0;
+        margin-top: 24px;
+        
+    }
+
+    .primary__li:nth-child(even){
+        flex-direction: column;
+        .primary__wrapper{
+            max-width: 350px;
+            margin-right: 0;
+        }
+    
+      
+    }
+    
+    .primary__wrapper::before{
+        content: "";
+        display: block;
+        height: 1px;
+        opacity: 0.15;
+        background: $main-color;
+        margin-bottom: 32px;
+    }
+    
+    .primary__wrapper::after{
+        content: "";
+        display: block;
+        height: 1px;
+        opacity: 0.15;
+        background: $main-color;
+        margin-top: 50px;
+    }
+    
+    .primary__title{
+        color: $main-color;
+        font-family: 'Ibarra Real Nova';
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 42px; 
+        letter-spacing: -0.357px;
+        margin: 0;
+    }
+    
+    .primary__text{
+        color: $main-color;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 30px; 
+        margin: 0;
+        margin-top: 24px;
+    }
+    
+    .primary__div{
+        margin-top: 30px;
+      
+    }
+
+
+}

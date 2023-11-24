@@ -1,0 +1,1190 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Public Sans";
+  background: #FAFAFA;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type=checkbox],
+[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+.container {
+  max-width: 1191px;
+  margin: 0 auto;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    max-width: 1191px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.header {
+  display: flex;
+  align-items: center;
+  padding-top: 64px;
+  padding-bottom: 54px;
+}
+
+.header__nav {
+  margin-left: auto;
+}
+
+.header__ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.header__li:not(:last-child) {
+  margin-right: 42px;
+}
+
+.header__li-a {
+  color: #33323D;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+
+.header__li-a:hover {
+  color: #5FB4A2;
+}
+
+.header__btn {
+  display: none;
+  border: none;
+  background: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    display: flex;
+    align-items: center;
+    padding-top: 64px;
+    padding-bottom: 47px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .header {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 40px;
+  }
+  .header__btn {
+    display: block;
+    margin-left: auto;
+  }
+  .header__nav {
+    display: none;
+  }
+}
+.dark__img {
+  background-image: url(/img/photo1.png);
+  width: 100%;
+  padding-top: 243px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.dark__wrapper {
+  max-width: 445px;
+  padding-top: 56px;
+  padding-right: 55px;
+  background: #FAFAFA;
+}
+
+.dark__title {
+  color: #33323D;
+  font-family: "Ibarra Real Nova";
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.446px;
+  margin: 0;
+}
+
+.dark__btn {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  background: #203A4C;
+  border: none;
+  margin-top: 53px;
+}
+
+.dark__btn-spn {
+  color: #FFF;
+  padding-left: 37px;
+  padding-right: 37px;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.dark__btn:hover {
+  background: #5FB4A2;
+  transition: 0.5s;
+}
+
+.dark__btn:hover path {
+  fill: #FFF;
+}
+
+@media only screen and (max-width: 768px) {
+  .dark__img {
+    background-image: url(/img/Bitmap.png);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+  }
+  .dark__wrapper {
+    max-width: 514px;
+  }
+  .dark__title {
+    color: #33323D;
+    font-family: "Ibarra Real Nova";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+    margin: 0;
+  }
+  .dark__btn {
+    margin-top: 48px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .dark {
+    padding-bottom: 96px;
+  }
+  .dark__img {
+    background-image: url(/img/Bitmap.png);
+    width: 100%;
+    height: 271px;
+    background-position: center;
+    background-size: cover;
+  }
+  .dark__wrapper {
+    max-width: 311px;
+    margin-top: 28px;
+    padding: 24px;
+  }
+  .dark__btn {
+    margin-top: 32px;
+  }
+}
+.white {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.white__div {
+  display: flex;
+}
+
+.white__img {
+  background-image: url(/img/photo2.png);
+  width: 540px;
+  background-position: center;
+  background-size: cover;
+}
+
+.white__wrapper {
+  max-width: 350px;
+  margin-left: 125px;
+}
+
+.white__wrapper::before {
+  content: "";
+  display: block;
+  max-width: 350px;
+  height: 1px;
+  opacity: 0.15;
+  background: #33323D;
+  margin-bottom: 50px;
+}
+
+.white__wrapper::after {
+  content: "";
+  display: block;
+  max-width: 350px;
+  height: 1px;
+  opacity: 0.15;
+  background: #33323D;
+  margin-top: 55px;
+}
+
+.white__title {
+  color: #33323D;
+  font-family: "Ibarra Real Nova";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.357px;
+  margin: 0;
+}
+
+.white__text {
+  color: #33323D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  opacity: 0.8;
+  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 24px;
+}
+
+.white__link {
+  color: #33323D;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 17px 35px 17px 32px;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+  transition: background-color 0.6s, color 0.6s;
+}
+
+.white__link:hover {
+  color: #FFF;
+  background: #33323D;
+}
+
+@media only screen and (max-width: 768px) {
+  .white {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .white__img {
+    background-image: url(/img/photo2.png);
+    width: 540px;
+    background-position-x: 300px;
+    background-size: cover;
+  }
+  .white__wrapper {
+    max-width: 350px;
+    margin-left: 69px;
+  }
+}
+@media only screen and (max-width: 730px) {
+  .white {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+  .white__div {
+    display: flex;
+    flex-direction: column;
+  }
+  .white__img {
+    background-image: url(/img/photo2.png);
+    width: 100%;
+    height: 389.827px;
+    background-position: center;
+    background-size: cover;
+  }
+  .white__wrapper {
+    max-width: 350px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .white {
+    margin-top: 200px;
+    padding-bottom: 115px;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .white {
+    margin-top: 250px;
+  }
+}
+.gray {
+  padding-bottom: 150px;
+}
+
+.gray__div {
+  display: flex;
+  align-items: center;
+}
+
+.gray__tittle {
+  max-width: 350px;
+  color: #33323D;
+  font-family: "Ibarra Real Nova";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.357px;
+  margin: 0;
+}
+
+.gray__line {
+  width: 500px;
+  height: 1px;
+  opacity: 0.15;
+  background: #33323D;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+
+.gray__link {
+  text-align: center;
+  color: #33323D;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 17px 35px 17px 32px;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+  transition: background-color 0.6s, color 0.6s;
+}
+
+.gray__link:hover {
+  color: #FFF;
+  background: #33323D;
+}
+
+@media only screen and (max-width: 520px) {
+  .gray {
+    padding-bottom: 80px;
+  }
+  .gray__div {
+    flex-direction: column;
+  }
+  .gray__tittle {
+    text-align: center;
+    max-width: 311px;
+  }
+  .gray__line {
+    display: none;
+  }
+  .gray__link {
+    margin-top: 40px;
+  }
+}
+.footer {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  background: #33323D;
+}
+
+.footer__div {
+  display: flex;
+  align-items: center;
+}
+
+.footer__ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-left: 48px;
+}
+
+.footer__li:not(:first-child) {
+  margin-left: 42px;
+}
+
+.footer__li-a {
+  color: #FFF;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  opacity: 0.6;
+  transition: 0.5s ease;
+}
+
+.footer__li-a:hover {
+  color: #5FB4A2;
+}
+
+.footer__icons {
+  margin-left: auto;
+}
+
+.footer__icons svg:not(:last-child) {
+  margin-right: 15px;
+}
+
+@media only screen and (max-width: 730px) {
+  .footer {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+  .footer__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footer__ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 40px;
+  }
+  .footer__li {
+    text-align: center;
+  }
+  .footer__li:not(:first-child) {
+    margin-left: 0;
+    margin-top: 32px;
+  }
+  .footer__icons {
+    margin-left: 0;
+    margin-top: 40px;
+  }
+}
+.primary {
+  padding-bottom: 150px;
+}
+
+.primary__ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.primary__li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1015px;
+}
+
+.primary__li:not(:last-child) {
+  margin-bottom: 80px;
+}
+
+.primary__li:nth-child(even) {
+  flex-direction: row-reverse;
+}
+.primary__li:nth-child(even) .primary__wrapper {
+  max-width: 350px;
+  margin-right: 50px;
+}
+
+.primary__pht {
+  max-width: 540px;
+}
+
+.primary__wrapper {
+  max-width: 350px;
+  margin-left: 50px;
+}
+
+.primary__wrapper::before {
+  content: "";
+  display: block;
+  height: 1px;
+  opacity: 0.15;
+  background: #33323D;
+  margin-bottom: 103px;
+}
+
+.primary__wrapper::after {
+  content: "";
+  display: block;
+  height: 1px;
+  opacity: 0.15;
+  background: #33323D;
+  margin-top: 115px;
+}
+
+.primary__title {
+  color: #33323D;
+  font-family: "Ibarra Real Nova";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.357px;
+  margin: 0;
+}
+
+.primary__text {
+  color: #33323D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+  margin-top: 28px;
+}
+
+.primary__div {
+  margin-top: 40px;
+}
+
+.primary__link {
+  color: #33323D;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 17px 35px 17px 32px;
+  text-transform: uppercase;
+  border: 1px solid #33323D;
+  text-decoration: none;
+  transition: background-color 0.6s, color 0.6s;
+}
+
+.primary__link:hover {
+  color: #FFF;
+  background: #33323D;
+}
+
+@media only screen and (max-width: 768px) {
+  .primary {
+    padding-bottom: 96px;
+  }
+  .primary__pht {
+    max-width: 540px;
+  }
+  .primary__wrapper {
+    max-width: 350px;
+    margin-left: 50px;
+  }
+  .primary__wrapper::before {
+    content: "";
+    display: block;
+    height: 1px;
+    opacity: 0.15;
+    background: #33323D;
+    margin-bottom: 32px;
+  }
+  .primary__wrapper::after {
+    content: "";
+    display: block;
+    height: 1px;
+    opacity: 0.15;
+    background: #33323D;
+    margin-top: 70px;
+  }
+  .primary__title {
+    color: #33323D;
+    font-family: "Ibarra Real Nova";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+    margin: 0;
+  }
+  .primary__text {
+    color: #33323D;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 28px;
+  }
+  .primary__div {
+    margin-top: 35px;
+  }
+}
+@media only screen and (max-width: 632px) {
+  .primary {
+    padding-bottom: 80px;
+  }
+  .primary__pht {
+    max-width: 540px;
+  }
+  .primary__li {
+    flex-direction: column;
+    max-width: 1015px;
+  }
+  .primary__li:not(:last-child) {
+    margin-bottom: 72px;
+  }
+  .primary__wrapper {
+    max-width: 350px;
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  .primary__li:nth-child(even) {
+    flex-direction: column;
+  }
+  .primary__li:nth-child(even) .primary__wrapper {
+    max-width: 350px;
+    margin-right: 0;
+  }
+  .primary__wrapper::before {
+    content: "";
+    display: block;
+    height: 1px;
+    opacity: 0.15;
+    background: #33323D;
+    margin-bottom: 32px;
+  }
+  .primary__wrapper::after {
+    content: "";
+    display: block;
+    height: 1px;
+    opacity: 0.15;
+    background: #33323D;
+    margin-top: 50px;
+  }
+  .primary__title {
+    color: #33323D;
+    font-family: "Ibarra Real Nova";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+    margin: 0;
+  }
+  .primary__text {
+    color: #33323D;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 24px;
+  }
+  .primary__div {
+    margin-top: 30px;
+  }
+}
+.brown {
+  padding-top: 48px;
+}
+
+.brown__div {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(52, 51, 61, 0.15);
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.brown__word {
+  width: 350px;
+}
+
+.brown__title {
+  width: 350px;
+  color: #33323D;
+  font-family: "Ibarra Real Nova";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.357px;
+  margin: 0;
+}
+
+.brown__wrapper {
+  max-width: 635px;
+}
+
+.brown__text {
+  color: #33323D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0;
+}
+
+.brown__icons {
+  margin-top: 24px;
+}
+
+.brown__icons svg:not(:first-child) {
+  margin-left: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  .brown {
+    padding-top: 40px;
+  }
+  .brown__div {
+    flex-direction: column;
+    justify-content: space-between;
+    border-top: 1px solid rgba(52, 51, 61, 0.15);
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .brown__word {
+    width: 281px;
+  }
+  .brown__title {
+    width: 281px;
+    color: #33323D;
+    font-family: "Ibarra Real Nova";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+    margin: 0;
+  }
+  .brown__wrapper {
+    max-width: 635px;
+  }
+  .brown__text {
+    color: #33323D;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+    margin-top: 24px;
+  }
+  .brown__icons {
+    margin-top: 24px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .brown {
+    padding: 0;
+  }
+  .brown__word {
+    width: 235px;
+  }
+  .brown__title {
+    width: 235px;
+  }
+}
+.global {
+  padding-bottom: 109px;
+}
+
+.global__div {
+  display: flex;
+  border-top: 1px solid rgba(52, 51, 61, 0.15);
+  padding-top: 48px;
+}
+
+.global__word {
+  width: 350px;
+}
+
+.global__title {
+  width: 350px;
+  color: #33323D;
+  font-family: "Ibarra Real Nova";
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 42px;
+  letter-spacing: -0.357px;
+  margin: 0;
+}
+
+.global__form {
+  margin-left: auto;
+  width: 100%;
+  max-width: 635px;
+}
+
+.global__form-text {
+  color: #33323D;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 30px;
+  opacity: 0.8;
+}
+
+.global__inp {
+  width: 100%;
+  color: #FFF;
+  padding: 9px 0 9px 16px;
+  margin-top: 8px;
+  opacity: 0.1;
+  background: #33323D;
+  margin-bottom: 24px;
+}
+
+.global__inp::-moz-placeholder {
+  color: #FFF;
+}
+
+.global__inp::placeholder {
+  color: #FFF;
+}
+
+.global__inp:focus {
+  outline: 1px solid #5FB4A2;
+}
+
+.global__inp-error {
+  display: block;
+  text-align: left;
+  color: #F43030;
+  font-size: 10px;
+  font-style: italic;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.global__inp-error-massage {
+  display: none;
+}
+
+.global__inp:invalid:focus:not(:-moz-placeholder-shown) ~ .global__inp-error-massage {
+  display: block;
+}
+
+.global__inp:invalid:focus:not(:placeholder-shown) ~ .global__inp-error-massage {
+  display: block;
+}
+
+.global__btn {
+  color: #FFF;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 17px 24px;
+  background: #203A4C;
+}
+
+@media only screen and (max-width: 768px) {
+  .global {
+    padding-bottom: 96px;
+  }
+  .global__div {
+    flex-direction: column;
+    border-top: 1px solid rgba(52, 51, 61, 0.15);
+    padding-top: 32px;
+  }
+  .global__word {
+    max-width: 281px;
+  }
+  .global__title {
+    max-width: 281px;
+    color: #33323D;
+    font-family: "Ibarra Real Nova";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+    margin: 0;
+  }
+  .global__form {
+    margin-left: 0;
+    width: 100%;
+    max-width: 635px;
+    margin-top: 32px;
+  }
+  .global__form-text {
+    color: #33323D;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px;
+    opacity: 0.8;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .global {
+    padding-bottom: 80px;
+  }
+  .global__word {
+    width: 235px;
+  }
+  .global__title {
+    width: 235px;
+    color: #33323D;
+    font-family: "Ibarra Real Nova";
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+    margin: 0;
+  }
+}/*# sourceMappingURL=style.css.map */

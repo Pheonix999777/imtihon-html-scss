@@ -1,0 +1,153 @@
+.global{
+   padding-bottom: 109px;
+}
+
+.global__div{
+    display: flex;
+    border-top: 1px solid rgba(52, 51, 61, 0.15);
+    padding-top: 48px;
+}
+
+.global__word{
+    width: 350px;
+}
+
+.global__title{
+    width: 350px;
+    color: $main-color;
+    font-family: 'Ibarra Real Nova';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: -0.357px;
+    margin: 0;
+}
+
+.global__form{
+    margin-left: auto;
+    width: 100%;
+    max-width: 635px;
+}
+
+.global__form-text{
+    color: $main-color;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 30px;
+    opacity: 0.8;
+}
+
+.global__inp{
+    width: 100%;
+    color: $colorF;
+    padding: 9px 0 9px 16px;
+    margin-top: 8px;
+    opacity: 0.1;
+    background: #33323D;
+    margin-bottom: 24px;
+  
+}
+
+.global__inp::placeholder{
+    color: $color;
+}
+
+.global__inp:focus{
+    outline: 1px solid  #5FB4A2;
+}
+
+
+.global__inp-error{
+    display: block;
+    text-align: left;
+    color: #F43030;
+    font-size: 10px;
+    font-style: italic;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.global__inp-error-massage{
+    display: none;
+}
+
+.global__inp:invalid:focus:not(:placeholder-shown) ~ .global__inp-error-massage {
+    display: block;   
+}
+
+
+.global__btn{
+    color: $color;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 17px 24px;
+    background: #203A4C;
+}
+
+@media  only screen  and (max-width: 768px){
+    .global{
+        padding-bottom: 96px;
+     }
+     
+     .global__div{
+         flex-direction: column;
+         border-top: 1px solid rgba(52, 51, 61, 0.15);
+         padding-top: 32px;
+     }
+     
+     .global__word{
+         max-width: 281px;
+     }
+     
+     .global__title{
+         max-width: 281px;
+         color: #33323D;
+         font-family: 'Ibarra Real Nova';
+         font-size: 40px;
+         font-weight: 700;
+         line-height: 42px;
+         letter-spacing: -0.357px;
+         margin: 0;
+     }
+     
+     .global__form{
+         margin-left: 0;
+         width: 100%;
+         max-width: 635px;
+         margin-top: 32px;
+     }
+     
+     .global__form-text{
+         color: #33323D;
+         font-size: 13px;
+         font-weight: 700;
+         line-height: 30px;
+         opacity: 0.8;
+     }
+
+}
+
+@media  only screen  and (max-width: 480px){
+    .global{
+        padding-bottom: 80px;
+     }
+
+     .global__word{
+        width: 235px;
+     }
+
+         
+     .global__title{
+        width: 235px;
+         color: #33323D;
+         font-family: 'Ibarra Real Nova';
+         font-size: 40px;
+         font-weight: 700;
+         line-height: 42px;
+         letter-spacing: -0.357px;
+         margin: 0;
+     }
+}
